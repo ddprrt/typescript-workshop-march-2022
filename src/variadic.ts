@@ -26,10 +26,10 @@ type PersonProps = [age: number, name: string]
 
 const [my_age, my_name]: PersonProps = [39, "Stefan"]
 
-type StartsWithString<T extends unknown[]> = [string, ...T, string]
+type StartsAndEndsWithString<T extends unknown[]> = [string, ...T, string]
 
-type T1 = StartsWithString<[boolean]>
-type T2 = StartsWithString<[boolean, string]>
+type T1 = StartsAndEndsWithString<[boolean]>
+type T2 = StartsAndEndsWithString<[boolean, string]>
 
 type TwoVariadicParts<T extends unknown[], U extends unknown[]> = 
     [...T, string, ...U]

@@ -1,5 +1,7 @@
 // INFER
 
+import { NonRelativeModuleNameResolutionCache } from "../node_modules/typescript/lib/typescript"
+
 type IsFunction<T> = T extends (...args: any[]) => any ? T : never
 
 type X1 = IsFunction<number>
